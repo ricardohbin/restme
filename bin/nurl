@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+"use strict";
+var
+	Nurl = require("../lib/nurl").Nurl,
+	argv = require("yargs").argv;
+
+(new Nurl(argv)).init();
