@@ -2,6 +2,10 @@
 "use strict";
 var
 	Nurl = require("../lib/nurl").Nurl,
-	argv = require("yargs").argv;
+	argv = require("yargs")
+		.alias('a', 'auth')
+		.alias('j', 'json')
+		.alias('p', 'pretty')
+		.argv;
 
 (new Nurl(argv)).init();
