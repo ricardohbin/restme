@@ -6,6 +6,7 @@ var
 		.alias('a', 'auth')
 		.alias('j', 'json')
 		.alias('p', 'pretty')
+		.alias('h', 'header')
 		.argv;
 
 (new Nurl(argv)).init();
