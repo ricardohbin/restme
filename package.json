@@ -1,15 +1,15 @@
 {
-  "name": "nurl",
+  "name": "restme",
   "version": "1.0.0",
   "description": "A node.js cli to make http requests easy.",
-  "main": "lib/nurl.js",
-  "bin": "bin/nurl",
+  "main": "lib/restme.js",
+  "bin": "bin/restme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ricardohbin/nurl.git"
+    "url": "https://github.com/ricardohbin/restme.git"
   },
   "keywords": [
     "cli",
@@ -19,9 +19,9 @@
   "author": "Ricardo Bin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ricardohbin/nurl/issues"
+    "url": "https://github.com/ricardohbin/restme/issues"
   },
-  "homepage": "https://github.com/ricardohbin/nurl",
+  "homepage": "https://github.com/ricardohbin/restme",
   "devDependencies": {
     "mocha": "^2.1.0"
   },

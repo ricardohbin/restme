@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 var
-	Nurl = require("../lib/nurl").Nurl,
+	Restme = require("../lib/restme").Restme,
 	argv = require("yargs")
 		.alias('a', 'auth')
 		.alias('j', 'json')
@@ -9,4 +9,4 @@ var
 		.alias('h', 'header')
 		.argv;
 
-(new Nurl(argv)).init();
+(new Restme(argv)).init();
