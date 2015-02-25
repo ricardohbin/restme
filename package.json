@@ -1,6 +1,6 @@
 {
   "name": "restme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A node.js cli to make http requests easy.",
   "main": "lib/restme.js",
   "bin": "bin/restme",
