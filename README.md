@@ -16,9 +16,9 @@ $ restme https://status.github.com/api/status.json
 ```sh
 $ restme https://someurl.com.br/post/1 -j
 ```
-### Pretty simple example
+### Pretty simple example. Only works with json responses
 ```sh
-$ restme https://status.github.com/api/status.json -j -p [or --pretty]
+$ restme https://status.github.com/api/status.json -p [or --pretty]
 ```
 ### Use other request method (default is GET)
 ```sh
