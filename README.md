@@ -30,11 +30,11 @@ $ restme https://someurl.com.br/post/1 -h "Accept: application/json, X-Token: XX
 ```
 ### Posting serialized data
 ```sh
-$ restme https://someurl.com.br/post/1 -f "name=foo&password=bar"[or --form]
+$ restme POST https://someurl.com.br/post/1 -f "name=foo&password=bar"[or --form]
 ```
 ### Posting JSON data
 ```sh
-$ restme https://someurl.com.br/post/1 -d '{"name":"foo", "password": "bar" }'[or --data]
+$ restme POST https://someurl.com.br/post/1 -d '{"name":"foo", "password": "bar" }'[or --data]
 ```
 ### Using basic auth
 ```sh
