@@ -3,7 +3,7 @@
 Restme is an easy way to execute requests in terminal. Instead of use the classic curl, why don't use a simpler cli?
 
 ### Version
-1.0.0
+1.0.3
 ### Installation
 ```sh
 $ [sudo] npm i -g restme
@@ -16,7 +16,7 @@ $ restme https://status.github.com/api/status.json
 ```sh
 $ restme https://someurl.com.br/post/1 -j
 ```
-### Pretty simple example. Only works with json responses
+### Pretty mode :D! Only works with json responses
 ```sh
 $ restme https://status.github.com/api/status.json -p [or --pretty]
 ```
@@ -27,6 +27,14 @@ $ restme DELETE https://someurl.com.br/post/1
 ### Adding some headers
 ```sh
 $ restme https://someurl.com.br/post/1 -h "Accept: application/json, X-Token: XXXXXXXXXX" [or --header]
+```
+### Posting serialized data
+```sh
+$ restme https://someurl.com.br/post/1 -f "name=foo&password=bar"[or --form]
+```
+### Posting JSON data
+```sh
+$ restme https://someurl.com.br/post/1 -d '{"name":"foo", "password": "bar" }'[or --data]
 ```
 ### Using basic auth
 ```sh
@@ -44,4 +52,4 @@ $ restme https://someurl.com.br -j -h "X-Token: XXXXXXXXX" -p -a user@password
 
 License
 ----
-SIC
+ISC

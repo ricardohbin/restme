@@ -3,10 +3,12 @@
 var
 	Restme = require("../lib/restme").Restme,
 	argv = require("yargs")
-		.alias('a', 'auth')
-		.alias('j', 'json')
-		.alias('p', 'pretty')
-		.alias('h', 'header')
+		.alias("a", "auth")
+		.alias("j", "json")
+		.alias("p", "pretty")
+		.alias("h", "header")
+		.alias("f", "form")
+		.alias("d", "body")
 		.argv;
 
 (new Restme(argv)).init();
