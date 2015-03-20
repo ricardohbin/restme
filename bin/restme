@@ -5,10 +5,12 @@ var
 	argv = require("yargs")
 		.alias("a", "auth")
 		.alias("j", "json")
-		.alias("p", "pretty")
+		.alias("r", "raw")
 		.alias("h", "header")
 		.alias("f", "form")
 		.alias("d", "body")
+		.alias("I", "only-response-header")
+		.alias("B", "only-response-body")
 		.argv;
 
 (new Restme(argv)).init();
