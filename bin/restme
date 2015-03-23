@@ -3,14 +3,25 @@
 var
 	Restme = require("../lib/restme").Restme,
 	argv = require("yargs")
+		.usage("Usage: $0 [<method>] <command> [<args>]")
 		.alias("a", "auth")
 		.alias("j", "json")
 		.alias("r", "raw")
-		.alias("h", "header")
+		.alias("H", "header")
 		.alias("f", "form")
 		.alias("d", "body")
 		.alias("I", "only-response-header")
 		.alias("B", "only-response-body")
+		.help('h')
+		.alias('h', 'help')
+		.describe('a', 'Basic authentication. Usage: -a user@password')
+		.describe('j', 'Add application/json to your request header')
+		.describe('r', 'The json response is raw, without any formatter')
+		.describe('f', 'Pass serialized data in x-www-form-urlencoded requests. Usage: -f "foo=bar&user=me"')
+		.describe('d', 'Pass json data in requests. Usage: -d \'{"foo":"bar","user":"me"}\'')
+		.describe('I', 'Only receive the response headers, without body')
+		.describe('B', 'Only receive the response body, without headers')
+		.describe('H', 'Pass headers in a request. Usage: -H "X-Header:1, Accept: application/json"')
 		.argv;
 
 (new Restme(argv)).init();
