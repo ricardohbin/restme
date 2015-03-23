@@ -62,6 +62,7 @@ $ restme https://someurl.com.br -j -H "X-Token: XXXXXXXXX" -r -a user@password
 ### Still want to help?
 ```sh
 $ restme -h [--help]
+```
 ### Todo's
  - Write Tests (shame on me)
  - Add more and more helpful options
