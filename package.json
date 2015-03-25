@@ -14,10 +14,13 @@
   "keywords": [
     "cli",
     "request",
-    "curl"
+    "curl",
+    "headers",
+    "wget",
+    "akamai"
   ],
   "author": "Ricardo Bin",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ricardohbin/restme/issues"
   },

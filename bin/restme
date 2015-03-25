@@ -22,6 +22,7 @@ var
 		.describe('I', 'Only receive the response headers, without body')
 		.describe('B', 'Only receive the response body, without headers')
 		.describe('H', 'Pass headers in a request. Usage: -H "X-Header:1, Accept: application/json"')
+		.describe('akamai', 'Active akamai debug mode')
 		.argv;
 
 (new Restme(argv)).init();
