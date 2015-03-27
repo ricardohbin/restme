@@ -3,7 +3,7 @@
 Restme is an easy way to execute requests in terminal. Instead of use the classic curl, why don't use a simpler cli?
 
 ### Version
-1.0.7
+1.0.8
 ### Installation
 ```sh
 $ [sudo] npm i -g restme
@@ -18,6 +18,10 @@ Awesome uh?
 ### Simple example
 ```sh
 $ restme https://someurl.com
+```
+### Simple example, without protocol (default is http://)
+```sh
+$ restme someurl.com
 ```
 ### Using convenience -j or --json option to auto include Accept: application/json
 ```sh
