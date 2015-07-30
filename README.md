@@ -3,7 +3,7 @@
 Restme is an easy way to execute requests in terminal. Instead of use the classic curl, why don't use a simpler cli?
 
 ### Version
-1.0.8
+1.0.9
 ### Installation
 ```sh
 $ [sudo] npm i -g restme
@@ -55,6 +55,7 @@ $ restme https://someurl.com/auth -a user@password [or --auth]
 ```sh
 $ restme https://www.someurl.com -I
 ```
+
 ### Only returns the body
 ```sh
 $ restme https://www.someurl.com -B
@@ -62,6 +63,10 @@ $ restme https://www.someurl.com -B
 ### Akamai debug mode!
 ```sh
 $ restme https://www.someurl.com --akamai
+```
+### Timeout to requests
+```sh
+$ restme https://www.someurl.com -m 2 [or --max-time]
 ```
 ### Putting all together
 ```sh
