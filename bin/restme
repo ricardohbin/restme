@@ -12,6 +12,7 @@ var
 		.alias("d", "body")
 		.alias("I", "only-response-header")
 		.alias("B", "only-response-body")
+		.alias("m", "max-time")
 		.help('h')
 		.alias('h', 'help')
 		.describe('a', 'Basic authentication. Usage: -a user@password')
@@ -22,6 +23,7 @@ var
 		.describe('I', 'Only receive the response headers, without body')
 		.describe('B', 'Only receive the response body, without headers')
 		.describe('H', 'Pass headers in a request. Usage: -H "X-Header:1, Accept: application/json"')
+		.describe('m', 'Pass a timeout (in seconds) to a request. Usage: -m 20')
 		.describe('akamai', 'Active akamai debug mode')
 		.argv;
 
